@@ -1,3 +1,9 @@
+# @axhxrx/deno
+
+A fork of the final version of @nx/deno after the Nx team discontinued it, for internal use. 
+
+The README from the [original Nx project](https://github.com/nrwl/nx-labs) follows:
+
 # @nx/deno
 
 > ⚠️ The Deno plugin is deprecated and will no longer receive updates. We are committed to providing high-quality tooling to community, and we no longer have the capacity to keep this plugin updated.
