@@ -4,7 +4,7 @@ import { join, posix, resolve, sep } from 'path';
 import { processCommonArgs } from '../../utils/arg-utils';
 import { assertDenoInstalled, runDeno } from '../../utils/run-deno';
 import { DenoTestExecutorSchema } from './schema';
-
+// 
 interface DenoTestExecutorNormalizedSchema extends DenoTestExecutorSchema {
   enableCoverage: boolean;
   testDir: string;
@@ -45,6 +45,8 @@ function normalizeOptions(
     );
   }
   const normalized: DenoTestExecutorNormalizedSchema = {} as any;
+
+  console.log('options', options);  
 
   if (options.coverageDirectory) {
     normalized.coverageDirectoryFullPath = resolve(
