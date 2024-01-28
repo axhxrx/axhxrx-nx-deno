@@ -10,7 +10,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "my-plain-app/deno.json",
         "main": "my-plain-app/src/main.ts",
@@ -27,19 +27,19 @@ Object {
       },
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "my-plain-app/deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "my-plain-app:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/my-plain-app",
         "denoConfig": "my-plain-app/deno.json",
@@ -62,7 +62,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "nested/my-plain-app/deno.json",
         "main": "nested/my-plain-app/src/main.ts",
@@ -79,19 +79,19 @@ Object {
       },
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "nested/my-plain-app/deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "nested-my-plain-app:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/nested/my-plain-app",
         "denoConfig": "nested/my-plain-app/deno.json",
@@ -127,7 +127,7 @@ Object {
       },
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "my-netlify-app/deno.json",
       },
@@ -140,7 +140,7 @@ Object {
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/my-netlify-app",
         "denoConfig": "my-netlify-app/deno.json",

@@ -98,7 +98,7 @@ function isDenoProject(project: ProjectConfiguration) {
     // TODO(caleb): remove when nrwl/deno is removed
     Object.values(project.targets).some(
       (target) =>
-        target.executor.startsWith('@nx/deno') ||
+        target.executor.startsWith('@axhxrx/nx-deno') ||
         target.executor.startsWith('@nrwl/deno')
     )
   ) {

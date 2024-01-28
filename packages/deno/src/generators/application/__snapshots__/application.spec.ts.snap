@@ -10,7 +10,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "apps/my-app/deno.json",
         "main": "apps/my-app/src/main.ts",
@@ -21,19 +21,19 @@ Object {
       ],
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "apps/my-app/deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "my-app:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/apps/my-app",
         "denoConfig": "apps/my-app/deno.json",
@@ -56,7 +56,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "apps/my-oak-api/deno.json",
         "main": "apps/my-oak-api/src/main.ts",
@@ -67,19 +67,19 @@ Object {
       ],
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "apps/my-oak-api/deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "my-oak-api:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/apps/my-oak-api",
         "denoConfig": "apps/my-oak-api/deno.json",
@@ -137,7 +137,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "deno.json",
         "main": "src/main.ts",
@@ -148,19 +148,19 @@ Object {
       ],
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "my-app:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/my-app",
         "denoConfig": "deno.json",
@@ -183,7 +183,7 @@ Object {
   "tags": Array [],
   "targets": Object {
     "build": Object {
-      "executor": "@nx/deno:esbuild",
+      "executor": "@axhxrx/nx-deno:esbuild",
       "options": Object {
         "denoConfig": "deno.json",
         "main": "src/main.ts",
@@ -194,19 +194,19 @@ Object {
       ],
     },
     "lint": Object {
-      "executor": "@nx/deno:lint",
+      "executor": "@axhxrx/nx-deno:lint",
       "options": Object {
         "denoConfig": "deno.json",
       },
     },
     "serve": Object {
-      "executor": "@nx/deno:run",
+      "executor": "@axhxrx/nx-deno:run",
       "options": Object {
         "buildTarget": "my-oak-api:build",
       },
     },
     "test": Object {
-      "executor": "@nx/deno:test",
+      "executor": "@axhxrx/nx-deno:test",
       "options": Object {
         "coverageDirectory": "coverage/my-oak-api",
         "denoConfig": "deno.json",

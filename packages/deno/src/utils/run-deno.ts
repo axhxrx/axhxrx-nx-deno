@@ -33,7 +33,7 @@ export function assertDenoInstalled() {
     });
   } catch (err) {
     throw new Error(stripIndents`Unable to find Deno on your system.
-Deno will need to be installed in order to run targets from @nx/deno in this workspace.
+Deno will need to be installed in order to run targets from @axhxrx/nx-deno in this workspace.
 You can learn how to install deno at https://deno.land/manual/getting_started/installation
 If you've already installed Deno, then make sure it's avaiable in your PATH.
 You might need to quit and restart your terminal.`);

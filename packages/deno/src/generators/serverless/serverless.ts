@@ -92,7 +92,7 @@ export function addProject(tree: Tree, opts: NormalizedSchema) {
   const targets: ProjectConfiguration['targets'] = {
     build: {
       executor:
-        opts.bundler === 'deno_emit' ? '@nx/deno:emit' : '@nx/deno:esbuild',
+        opts.bundler === 'deno_emit' ? '@axhxrx/nx-deno:emit' : '@axhxrx/nx-deno:esbuild',
       outputs: [
         joinPathFragments(
           'dist',
@@ -110,13 +110,13 @@ export function addProject(tree: Tree, opts: NormalizedSchema) {
       },
     },
     serve: {
-      executor: '@nx/deno:run',
+      executor: '@axhxrx/nx-deno:run',
       options: {
         buildTarget: `${opts.projectName}:build`,
       },
     },
     test: {
-      executor: '@nx/deno:test',
+      executor: '@axhxrx/nx-deno:test',
       outputs: [coverageDirectory],
       options: {
         coverageDirectory,
@@ -124,7 +124,7 @@ export function addProject(tree: Tree, opts: NormalizedSchema) {
       },
     },
     lint: {
-      executor: '@nx/deno:lint',
+      executor: '@axhxrx/nx-deno:lint',
       options: {
         denoConfig: joinPathFragments(opts.projectRoot, 'deno.json'),
       },

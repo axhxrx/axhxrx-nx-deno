@@ -53,7 +53,7 @@ function addDenoPluginToNxJson(tree: Tree) {
     : [];
 
   const plugins = new Set<string>(pluginNames);
-  plugins.add('@nx/deno');
+  plugins.add('@axhxrx/nx-deno');
   nxJson.plugins = Array.from(plugins);
 
   updateNxJson(tree, nxJson);

@@ -10,7 +10,7 @@ export function createDenoAppForTesting(
     root: opts.projectRoot,
     targets: {
       build: {
-        executor: '@nx/deno:emit',
+        executor: '@axhxrx/nx-deno:emit',
         options: {
           main: joinPathFragments(opts.projectRoot, 'src/main.ts'),
           outputFile: joinPathFragments(
@@ -22,20 +22,20 @@ export function createDenoAppForTesting(
         },
       },
       serve: {
-        executor: '@nx/deno:run',
+        executor: '@axhxrx/nx-deno:run',
         options: {
           buildTarget: `${opts.projectName}:build`,
         },
       },
       test: {
-        executor: '@nx/deno:test',
+        executor: '@axhxrx/nx-deno:test',
         options: {
           coverageDirectory: joinPathFragments('coverage', opts.projectRoot),
           denoConfig: joinPathFragments(opts.projectRoot, 'deno.json'),
         },
       },
       lint: {
-        executor: '@nx/deno:lint',
+        executor: '@axhxrx/nx-deno:lint',
         options: {
           denoConfig: joinPathFragments(opts.projectRoot, 'deno.json'),
         },

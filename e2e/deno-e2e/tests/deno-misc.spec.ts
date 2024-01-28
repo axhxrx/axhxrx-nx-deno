@@ -13,7 +13,7 @@ describe('Deno Misc Tests', () => {
   // on a unique project in the workspace, such that they
   // are not dependant on one another.
   beforeAll(() => {
-    ensureNxProject('@nx/deno', 'dist/packages/deno');
+    ensureNxProject('@axhxrx/nx-deno', 'dist/packages/deno');
   });
 
   afterAll(async () => {
@@ -24,13 +24,13 @@ describe('Deno Misc Tests', () => {
 
   it('should add existing project to deno imports', async () => {
     await runNxCommandAsync('generate @nx/js:lib my-types');
-    await runNxCommandAsync('generate @nx/deno:app api');
+    await runNxCommandAsync('generate @axhxrx/nx-deno:app api');
     // change my-types index.ts file to be deno compatible
     updateFile(
       'my-types/src/index.ts',
       `export const myType = () => 'myType';`
     );
-    await runNxCommandAsync('generate @nx/deno:add-import my-types');
+    await runNxCommandAsync('generate @axhxrx/nx-deno:add-import my-types');
     updateFile(
       'api/src/main.ts',
       `import { myType } from '@proj/my-types';

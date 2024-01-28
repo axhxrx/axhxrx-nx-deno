@@ -26,7 +26,7 @@ describe('import utils', () => {
       ).toThrowErrorMatchingInlineSnapshot(`
         "import_map.json does not exist in the root of the workspace.
         This means the workspace has not been initialized for Deno.
-        You can do this by running 'nx g @nx/deno:init'"
+        You can do this by running 'nx g @axhxrx/nx-deno:init'"
       `);
     });
 

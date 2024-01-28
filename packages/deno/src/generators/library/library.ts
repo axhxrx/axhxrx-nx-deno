@@ -80,7 +80,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
 function addProjectConfig(tree: Tree, opts: NormalizedSchema) {
   const targets: ProjectConfiguration['targets'] = {
     test: {
-      executor: '@nx/deno:test',
+      executor: '@axhxrx/nx-deno:test',
       outputs: [`{workspaceRoot}/coverage/${opts.projectRoot}`],
       options: {
         coverageDirectory: `coverage/${opts.projectRoot}`,
@@ -89,7 +89,7 @@ function addProjectConfig(tree: Tree, opts: NormalizedSchema) {
       },
     },
     lint: {
-      executor: '@nx/deno:lint',
+      executor: '@axhxrx/nx-deno:lint',
       options: {
         denoConfig: `${opts.projectRoot}/deno.json`,
       },
