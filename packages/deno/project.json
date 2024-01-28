@@ -75,6 +75,15 @@
       "options": {
         "parallel": false,
         "commands": [
+          "npx np --branch=axhxrx-nx-deno --contents dist/packages/deno"
+        ]
+      }
+    },
+    "publish-OLD-nx-labs-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "parallel": false,
+        "commands": [
           "node tools/scripts/publish.mjs deno {args.ver} {args.tag}"
         ]
       }
