@@ -97,8 +97,8 @@ function createArgs(options: DenoTestExecutorNormalizedSchema) {
   args.push(...processCommonArgs(options));
 
   if (options.coverageDirectory) {
-    if (options.inspect) {
-      logger.info('NX using --inspect turns off code coverage');
+    if (options.inspect || options.watch) {
+      logger.info('NX using --inspect or --watch turns off code coverage');
     } else {
       args.push(`--coverage=${options.coverageDirectory}`);
     }
