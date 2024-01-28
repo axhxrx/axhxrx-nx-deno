@@ -1,6 +1,6 @@
 {
-  "name": "nx-labs",
-  "version": "1.0.0-rc.1",
+  "name": "@axhxrx/nx-deno",
+  "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "scripts": {

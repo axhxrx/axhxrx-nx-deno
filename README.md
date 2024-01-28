@@ -1,3 +1,11 @@
+# @axhxrx/nx-deno
+
+A fork of the final version of @nx/deno after the Nx team discontinued it, for internal use. 
+
+The README from the [original Nx project](https://github.com/nrwl/nx-labs) follows:
+
+-----
+
 # Nx Labs
 
 This repo contains experimental Nx plugins that are maintained by the Nx core team.

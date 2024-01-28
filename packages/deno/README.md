@@ -1,4 +1,4 @@
-# @axhxrx/deno
+# @axhxrx/nx-deno
 
 A fork of the final version of @nx/deno after the Nx team discontinued it, for internal use. 
 
