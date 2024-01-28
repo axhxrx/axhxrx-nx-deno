@@ -18,7 +18,7 @@ export async function denoTestExecutor(
   options: DenoTestExecutorSchema,
   context: ExecutorContext
 ) {
-  console.log('🍒 @axhxrx/nx-deno ... will it blend??!')
+  console.log('🍒 @axhxrx/nx-deno ... will it blend??!!')
 
   assertDenoInstalled();
   const opts = normalizeOptions(options, context);

@@ -1,10 +1,28 @@
 # @axhxrx/nx-deno
 
-A [fork](https://github.com/axhxrx/axhxrx-nx-deno) of the final version of @nx/deno after the Nx team discontinued it, for internal use. 
+A plugin for working with Deno in an Nx monorepo. This is a [fork](https://github.com/axhxrx/axhxrx-nx-deno) of the final version of the original [@nrwl nx-labs](https://github.com/nrwl/nx-labs) `@nx/deno` plugin, at the time it was [discontinued](https://github.com/nrwl/nx-labs/commit/0c0a99bec1eb5a83c64bffffd3ae19560cb6ad36).
+
+## How to hack on this and release it
+The first attmpts to automate the NPM package release went sideways, with the git version not matching the NPM version, so here are the steps:
+
+1. Create a branch and PR to fix something or whatever, to warrant a new release, and make sure `nx e2e deno-e2e` succeeds.
+
+2. Merge PR to `axhxrx-nx-deno` branch (not `main`).
+
+3. Tag that commit like `v1.0.3`
+
+4. Make a GitHub release with release notes.
+
+5. When all that is done, `nx build deno && nx e2e deno-e2e`
+
+6. If all goes well, rejoice! Then publish manually like `cd dist/packages/deno && npm publish`
+
+(NOTE: Obviously, that whole mess should be automated. But Nx itself doesn't work great for that kind of thing, because of closed-but-not-yet-fixed issues [Allow interactive commands through @nrwl/workspace:run-commands #8269](https://github.com/nrwl/nx/issues/8269). But apparently [feat(core): forward stdin to commands started via rust #21195](https://github.com/nrwl/nx/pull/21195) will also fix #8629 when it lands, and that will be soon, so... waiting for that.)
+
+-----
 
 The README from the [original Nx project](https://github.com/nrwl/nx-labs) follows:
 
------
 
 # @nx/deno
 
