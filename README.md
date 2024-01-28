@@ -17,7 +17,9 @@ The first attmpts to automate the NPM package release went sideways, with the gi
 
 6. If all goes well, rejoice! Then publish manually like `cd dist/packages/deno && npm publish`
 
-(NOTE: Obviously, that whole mess should be automated. But Nx itself doesn't work great for that kind of thing, because of closed-but-not-yet-fixed issues [Allow interactive commands through @nrwl/workspace:run-commands #8269](https://github.com/nrwl/nx/issues/8269). But apparently [feat(core): forward stdin to commands started via rust #21195](https://github.com/nrwl/nx/pull/21195) will also fix #8629 when it lands, and that will be soon, so... waiting for that.
+(NOTE: Obviously, that whole mess should be automated. But Nx itself doesn't work great for that kind of thing, because of closed-but-not-yet-fixed issues [Allow interactive commands through @nrwl/workspace:run-commands #8269](https://github.com/nrwl/nx/issues/8269). But apparently [feat(core): forward stdin to commands started via rust #21195](https://github.com/nrwl/nx/pull/21195) will also fix #8629 when it lands, and that will be soon, so... waiting for that.)
+
+🤖 2024-01-28: All sorts of projects, including this one, are a little broken on macOS because on ARM the macOS cannot reliably delete node_modules. So every once in a while, some shit will fail because `blah blah rm node_modules failed, weah weah directory not empty`. That includes the `nx e2e deno-e2e` step, so if that happens, "simply" run it again.
 
 -----
 
