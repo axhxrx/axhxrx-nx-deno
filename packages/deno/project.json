@@ -75,7 +75,7 @@
       "options": {
         "parallel": false,
         "commands": [
-          "npx np --branch=axhxrx-nx-deno --contents dist/packages/deno"
+          "echo 'YO DUDE THE COMMAND TO PUBLISH IS AS FOLLOWS, AND YOU HAVE TO DO IT MANUALLY UNTIL WE FIND THAT WORKAROUND FOR RUNNING INTERACTIVE NODE COMMANDS FROM WITHIN NX COMMANDS: npx np --branch=axhxrx-nx-deno --contents dist/packages/deno'"
         ]
       }
     },
